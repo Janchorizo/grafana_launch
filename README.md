@@ -70,7 +70,7 @@ The current data sources supported by Grafana are the following :
 * AWS Cloudwatch
 
 ##### Graphite [web](https://graphiteapp.org/)
-(https://graphiteapp.org/img/architecture_diagram.png)
+!(https://graphiteapp.org/img/architecture_diagram.png)
 Graphite can be used to store numeric time-series data, although not collecting
 it.
 Three componentes make up Graphite : carbon, a daemon that listens for new
@@ -79,7 +79,7 @@ data; the Graphite webapp for rendering graphs, which is what we are doing in
 Grafana.
 
 ##### Prometheus [web](https://prometheus.io/)
-(https://prometheus.io/assets/architecture.svg)
+!(https://prometheus.io/assets/architecture.svg)
 Prometheus implements a multi-dimensional data model -time-series data
 identified by metric name and key/value pairs-, a flexible query language.
 
@@ -90,13 +90,13 @@ Elasticsearch lets you perform and combine many types of searches — structured
 Elasticsearch uses standard RESTful APIs and JSON. 
 
 ##### InfluxDB [web](https://docs.influxdata.com/influxdb/v1.3/)
-(https://www.influxdata.com/wp-content/uploads/architecture-2.png)
+!(https://www.influxdata.com/wp-content/uploads/architecture-2.png)
 InfluxDB is a time series database built from the ground up to handle high write and query loads. It is the second piece of the TICK stack. InfluxDB is meant to be used as a backing store for any use case involving large amounts of timestamped data, including DevOps monitoring, application metrics, IoT sensor data, and real-time analytics.
 
 Uses an SQL-like query language.
 
 ##### OpenTSDB [web](http://opentsdb.net/)
-(http://opentsdb.net/img/tsdb-architecture.png)
+!(http://opentsdb.net/img/tsdb-architecture.png)
 
 OpenTSDB consists of a Time Series Daemon (TSD) as well as set of command line utilities. Interaction with OpenTSDB is primarily achieved by running one or more of the TSDs.
 You can communicate with the TSD via a simple telnet-style protocol, an HTTP
@@ -104,10 +104,10 @@ API or a simple built-in GUI. All communications happen on the same port.
 
  In OpenTSDB, a time series data point consists of:
 
-    * A metric name.
-    * A UNIX timestamp (seconds or millisecinds since Epoch).
-    * A value (64 bit integer or single-precision floating point value), a JSON formatted event or a histogram/digest.
-    * A set of tags (key-value pairs) that describe the time series the point belongs to.
+   * A metric name.
+   * A UNIX timestamp (seconds or millisecinds since Epoch).
+   * A value (64 bit integer or single-precision floating point value), a JSON formatted event or a histogram/digest.
+   * A set of tags (key-value pairs) that describe the time series the point belongs to.
 
 
 ##### MySQL [web](https://www.mysql.com/)
